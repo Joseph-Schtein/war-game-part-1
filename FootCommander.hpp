@@ -1,5 +1,5 @@
 #pragma once
-#include "FootCommander.hpp"
+#include "Soldier.hpp"
 
 namespace WarGame{
 
@@ -7,7 +7,7 @@ namespace WarGame{
         public:
         FootCommander(int pn):Soldier(150,pn,20,150){}
 
-        void fire(std::pair<int,int> source,std::vector<std::vector<Soldier*>>& board) override;
+        void fire(std::pair<int,int> source ,std::vector<std::vector<Soldier*>>& board) override;
     
     };
 }
